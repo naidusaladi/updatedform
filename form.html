@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>form</title>
+</head>
+<body>
+    <form class="form" id="form" >
+        <h1 style="text-align: center;font-family: cursive;">Student Form</h1>
+        <div class="item">
+            <span>Roll Number</span>
+            <span><input type="text" id="roll" placeholder="Enter Your Roll Number"></span>
+            
+        </div>
+        <div class="item">
+            <span class="name"> First Name</span>
+            <span><input type="text" id="fname" placeholder="Enter Your First Name"></span>
+
+        </div>
+        <div class="item">
+            <span class="name"> Last Name</span>
+            <span><input type="text" id="lname" placeholder="Enter Your Last Name"></span>
+            
+        </div>
+        <div class="item">
+            <span class="sex">Sex</span>
+            <span class="sex">M</span>
+            <span class="sex1"><input type="radio" name="sex" id="male" value="male"></span>
+            <span class="sex">F</span>
+            <span class="sex1"><input type="radio" name="sex" id="female" value="female"></span>
+            
+        </div>
+        <div class="btn">
+            <input type="button" value="submit" onclick=submited();>
+        </div>
+    </form>
+    
+    <div class="result" id="result">
+        <div id="rroll">Roll Number :</div>
+        <div id="rfname">First Name  :</div>
+        <div id="rlname">Last Name   :</div>
+        <div id="rsex">Sex         :</div>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>
